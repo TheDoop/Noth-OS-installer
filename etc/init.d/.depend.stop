@@ -1,0 +1,8 @@
+TARGETS = apache-htcacheclean lvm2-lvmetad samba-ad-dc uuidd nmbd lvm2-lvmpolld apache2 atd speech-dispatcher swapspace sddm tor acpi-support bluetooth etc-setserial setserial avahi-daemon lightdm alsa-utils openvpn live-installer smbd teamviewerd plymouth network-manager networking kdm gdm3 cups rsyslog hwclock.sh
+network-manager: openvpn
+networking: openvpn apache2 samba-ad-dc tor smbd teamviewerd nmbd
+kdm: plymouth
+gdm3: plymouth
+cups: smbd
+rsyslog: network-manager cups atd speech-dispatcher bluetooth apache2 swapspace sddm live-installer tor apache-htcacheclean avahi-daemon acpi-support
+hwclock.sh: rsyslog atd tor uuidd

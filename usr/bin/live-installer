@@ -1,0 +1,11 @@
+#!/bin/bash
+# Launch live-installer with all passed arguments (future reserved)
+if [ -f /lib/live/mount/medium/live/filesystem.squashfs ]
+then
+/usr/bin/python2.7 -tt /usr/lib/live-installer/main.py $* 
+else
+echo "/lib/live/mount/medium/live/filesystem.squashfs bulunamadı /dev/loop0 kullanılacak"
+rm -f /etc/live-installer/install.conf 
+mv /etc/live-installer/installx.conf /etc/live-installer/install.conf
+/usr/bin/python2.7 -tt /usr/lib/live-installer/main.py $* 
+fi

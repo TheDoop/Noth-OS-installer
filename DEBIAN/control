@@ -1,0 +1,15 @@
+Package: noth-os-installer
+Priority: optional
+Section: admin
+Installed-Size: 6
+Maintainer: noth developers
+Architecture: all
+Version: 4.0
+Replaces: pardus-installer-tr, mint-translations
+Depends: python (>= 2.4), python (<< 3), python-gtk2, python-glade2, python-parted, python-geoip, python-qt4, python-numpy, python-imaging, desktop-file-utils, shared-mime-info, sysv-rc, menu, gdisk, zenity, xterm, python-webkit, gksu, console-setup, adduser, grub-efi, grub-pc-bin
+Conffiles:
+ /etc/live-installer/install.conf a2aad9d29082cac6614d17b6760452d6
+ /etc/init.d/live-installer e892affd28b07f9ffbbda5b27ea8be9c
+Description: Live Installer
+ Noth OS Live GTK Kurulum Aracı
+

@@ -1,0 +1,27 @@
+TARGETS = console-setup.sh rsyslog lvm2-lvmetad samba-ad-dc uuidd nmbd lvm2-lvmpolld binfmt-support p-script apache2 dbus atd speech-dispatcher swapspace sddm acpid tor acpi-support cron ssh rsync ntp network-manager bluetooth avahi-daemon lightdm openvpn kdm gdm3 live-installer cups smbd teamviewerd plymouth
+INTERACTIVE = console-setup.sh apache2 openvpn
+apache2: rsyslog
+dbus: rsyslog
+atd: rsyslog
+speech-dispatcher: rsyslog
+swapspace: rsyslog
+sddm: rsyslog
+acpid: rsyslog
+tor: rsyslog
+acpi-support: rsyslog
+cron: rsyslog
+ssh: rsyslog
+rsync: rsyslog
+ntp: rsyslog
+network-manager: dbus
+bluetooth: dbus
+avahi-daemon: dbus
+lightdm: acpid dbus
+openvpn: network-manager
+kdm: openvpn acpid dbus
+gdm3: openvpn dbus acpid
+live-installer: network-manager acpid
+cups: avahi-daemon
+smbd: cups nmbd
+teamviewerd: smbd kdm gdm3 live-installer bluetooth avahi-daemon lightdm atd speech-dispatcher swapspace sddm tor acpi-support cron ssh rsync ntp apache2 lvm2-lvmetad samba-ad-dc uuidd lvm2-lvmpolld binfmt-support p-script console-setup.sh
+plymouth: smbd kdm gdm3 live-installer bluetooth avahi-daemon lightdm atd speech-dispatcher swapspace sddm tor acpi-support cron ssh rsync ntp apache2 lvm2-lvmetad samba-ad-dc uuidd lvm2-lvmpolld binfmt-support p-script console-setup.sh

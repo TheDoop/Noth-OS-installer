@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=System;
+Comment[tr]=Noth OS'u bilgisayara kurar
+Comment=Noth OS'u bilgisayara kurar
+Exec=/usr/bin/noth-installer
+GenericName[tr]=Noth OS'u Yükle
+GenericName=Noth OS'u Yükle
+Icon=live-installer
+MimeType=
+Name[tr]=Noth OS'u Yükle
+Name=Noth OS'u Yükle
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
