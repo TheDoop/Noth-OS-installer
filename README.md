@@ -5,7 +5,7 @@ Installer package for Noth OS
 ```bash
 git clone https://github.com/TheDoop/Noth-OS-installer.git
 ```
-```
+```bash
 dpkg -b Noth-OS-installer*
 ```
 
