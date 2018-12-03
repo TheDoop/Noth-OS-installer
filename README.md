@@ -2,4 +2,6 @@
 Installer package for Noth OS
 
 ## Build
-'dpkg -b /path/to/source'
+``` 
+dpkg -b /path/to/source
+```
