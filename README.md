@@ -1,5 +1,5 @@
 # Noth-OS-installer
-Installer package for Noth OS
+GUI(Graphical user interface) Installer for Noth OS or Debian based distros.
 
 ## Build
 ```bash
