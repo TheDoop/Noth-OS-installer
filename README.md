@@ -3,5 +3,12 @@ Installer package for Noth OS
 
 ## Build
 ```bash
-dpkg -b /path/to/source
+git clone https://github.com/TheDoop/Noth-OS-installer.git
+```
+```
+dpkg -b Noth-OS-installer*
+```
+
+```bash
+su -c dpkg -i Noth-OS-installer*
 ```
