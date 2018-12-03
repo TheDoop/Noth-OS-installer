@@ -1,5 +1,5 @@
 # Noth-OS-installer
 Installer package for Noth OS
 
-##Build
+## Build
 'dpkg -b /path/to/source'
